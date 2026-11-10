@@ -1,0 +1,124 @@
+/* =========================================================
+   PAFUPI — Buttons
+   Usage: className="btn btn-primary" or "btn btn-secondary"
+   Optional modifiers: btn-sm, btn-lg, btn-block, btn-ghost, btn-danger
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Variants */
+
+.btn-primary {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #25434b;
+  box-shadow: 0 6px 18px rgba(23, 45, 53, 0.18);
+}
+
+.btn-secondary {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-input);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--bg-surface-muted);
+  border-color: var(--border-strong);
+}
+
+.btn-brand {
+  background: var(--brand-dark);
+  color: #ffffff;
+}
+
+.btn-brand:hover:not(:disabled) {
+  background: var(--brand-darker);
+  box-shadow: 0 6px 18px rgba(50, 109, 83, 0.2);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: rgba(23, 45, 53, 0.05);
+  color: var(--text-primary);
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border-color: var(--danger-border);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: var(--danger-soft);
+}
+
+/* Sizes */
+
+.btn-sm {
+  padding: 8px 13px;
+  font-size: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-lg {
+  padding: 14px 22px;
+  font-size: 14px;
+  border-radius: var(--radius-lg);
+}
+
+/* Modifiers */
+
+.btn-block {
+  width: 100%;
+}
+
+/* Mobile — larger touch targets */
+
+@media (max-width: 720px) {
+  .btn {
+    min-height: 44px;
+    padding: 12px 18px;
+  }
+
+  .btn-sm {
+    min-height: 36px;
+    padding: 8px 13px;
+  }
+
+  .btn-lg {
+    min-height: 50px;
+    padding: 14px 22px;
+  }
+}

@@ -1,0 +1,255 @@
+.screening-page {
+  min-height: 100vh;
+  padding: 60px 24px 90px;
+  background: #f7f8f5;
+}
+
+.screening-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.screening-back {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: #71827d;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.screening-back:hover {
+  color: #326d53;
+}
+
+.screening-hero {
+  margin-bottom: 30px;
+}
+
+.screening-eyebrow {
+  margin: 0 0 12px;
+  color: #57977c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.screening-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 4vw, 40px);
+  letter-spacing: -1.6px;
+  color: #172d35;
+}
+
+.screening-intro {
+  max-width: 620px;
+  margin: 0;
+  color: #71827d;
+  font-size: 14.5px;
+  line-height: 1.85;
+}
+
+.screening-disclaimer {
+  display: flex;
+  gap: 14px;
+  padding: 18px 20px;
+  margin-bottom: 34px;
+  background: #fef8ec;
+  border: 1px solid #f0e2c4;
+  border-radius: 12px;
+  color: #7a6746;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.screening-disclaimer strong {
+  color: #4a3a1f;
+}
+
+.screening-disclaimer-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #f3e3bc;
+  color: #7a5a15;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.screening-last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 22px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border: 1px solid #e6ebe5;
+  border-radius: 14px;
+}
+
+.screening-last-eyebrow {
+  margin: 0 0 6px;
+  color: #a2ada6;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.screening-last-body {
+  margin: 0 0 4px;
+  color: #172d35;
+  font-size: 14px;
+}
+
+.screening-last-date {
+  margin: 0;
+  color: #87938e;
+  font-size: 12px;
+}
+
+.screening-last-link {
+  padding: 10px 16px;
+  border-radius: 9px;
+  background: #e3f1e9;
+  color: #326d53;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.screening-last-link:hover {
+  background: #d4e9dc;
+}
+
+.screening-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: grid;
+  gap: 16px;
+}
+
+.screening-card {
+  padding: 26px 26px 24px;
+  background: #ffffff;
+  border: 1px solid #e6ebe5;
+  border-radius: 16px;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.screening-card:hover {
+  border-color: #c7ddce;
+  box-shadow: 0 10px 30px rgba(23, 45, 53, 0.05);
+}
+
+.screening-card-soon {
+  opacity: 0.7;
+}
+
+.screening-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.screening-card-name {
+  color: #57977c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.screening-card-badge {
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #f0ecf5;
+  color: #6b5e8b;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.screening-card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #172d35;
+}
+
+.screening-card > p {
+  margin: 0 0 16px;
+  color: #71827d;
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.screening-card-meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #a2ada6;
+  font-size: 11.5px;
+}
+
+.screening-card-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 9px;
+  background: #172d35;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.screening-card-btn:hover:not(.screening-card-btn-soon) {
+  background: #25434b;
+  transform: translateY(-1px);
+}
+
+.screening-card-btn-soon {
+  background: #eef2ee;
+  color: #a2ada6;
+  cursor: not-allowed;
+}
+
+.screening-signin {
+  padding: 20px 22px;
+  background: #e3f1e9;
+  border-radius: 14px;
+  margin-bottom: 26px;
+}
+
+.screening-signin p {
+  margin: 0 0 14px;
+  color: #2f5a47;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.screening-footnote {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #e6ebe5;
+  color: #a2ada6;
+  font-size: 11.5px;
+  line-height: 1.8;
+}
+
+@media (max-width: 620px) {
+  .screening-last {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .screening-card {
+    padding: 22px 20px 20px;
+  }
+}

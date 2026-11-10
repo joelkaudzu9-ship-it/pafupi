@@ -1,0 +1,263 @@
+.history-page {
+  min-height: 100vh;
+  padding: 60px 24px 100px;
+  background: #f7f8f5;
+}
+
+.history-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.history-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: #71827d;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.history-back:hover {
+  color: #326d53;
+}
+
+.history-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+
+.history-eyebrow {
+  margin: 0 0 12px;
+  color: #57977c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.history-header h1 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 40px);
+  letter-spacing: -1.6px;
+  color: #172d35;
+}
+
+.history-intro {
+  max-width: 520px;
+  margin: 0;
+  color: #71827d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.history-new-btn {
+  padding: 13px 20px;
+  border-radius: 10px;
+  background: #172d35;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.history-new-btn:hover {
+  background: #25434b;
+  transform: translateY(-2px);
+}
+
+/* Empty state */
+
+.history-empty {
+  padding: 60px 30px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e6ebe5;
+  border-radius: 18px;
+}
+
+.history-empty-symbol {
+  display: inline-grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: #e3f1e9;
+  color: #57977c;
+  font-size: 26px;
+}
+
+.history-empty h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #172d35;
+}
+
+.history-empty p {
+  max-width: 420px;
+  margin: 0 auto 24px;
+  color: #71827d;
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+/* List */
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e6ebe5;
+  border-radius: 14px;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.history-item:hover {
+  border-color: #c7ddce;
+  box-shadow: 0 6px 20px rgba(23, 45, 53, 0.04);
+}
+
+.history-item-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.history-instrument {
+  padding: 4px 9px;
+  border-radius: 5px;
+  background: #172d35;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.history-band {
+  padding: 4px 9px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.history-band-minimal {
+  background: #e3f1e9;
+  color: #326d53;
+}
+
+.history-band-mild {
+  background: #f4f0e2;
+  color: #8a6a18;
+}
+
+.history-band-moderate {
+  background: #f9ecd9;
+  color: #8a5f18;
+}
+
+.history-band-severe {
+  background: #f5c9c2;
+  color: #7a1e15;
+}
+
+.history-crisis {
+  padding: 4px 9px;
+  border-radius: 5px;
+  background: #fdf3f1;
+  color: #7a1e15;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 1px solid #ecc9c4;
+}
+
+.history-item-score {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.history-score-value {
+  color: #172d35;
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+
+.history-score-date {
+  color: #a2ada6;
+  font-size: 11.5px;
+}
+
+.history-view-btn {
+  flex-shrink: 0;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: #f7f8f5;
+  color: #326d53;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 200ms ease;
+}
+
+.history-view-btn:hover {
+  background: #e3f1e9;
+}
+
+.history-footnote {
+  margin: 30px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid #e6ebe5;
+  color: #a2ada6;
+  font-size: 11.5px;
+  line-height: 1.85;
+}
+
+@media (max-width: 620px) {
+  .history-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .history-new-btn {
+    text-align: center;
+  }
+  .history-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .history-view-btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,149 @@
+/* PAFUPI — Mental wellbeing hub */
+
+.wellbeing-page {
+  --wb-ink: #193630;
+  --wb-muted: #697a73;
+  --wb-green: #568b70;
+  --wb-green-dark: #356b51;
+  --wb-soft: #edf3ee;
+  --wb-paper: #f7f8f5;
+  --wb-line: #e4eae4;
+  background: var(--wb-paper);
+  color: var(--wb-ink);
+}
+
+.wellbeing-page * { box-sizing: border-box; }
+.wellbeing-page a { -webkit-tap-highlight-color: transparent; }
+.wellbeing-container { width: min(1160px, calc(100% - 64px)); margin: 0 auto; }
+
+/* Hero */
+.wellbeing-hero {
+  padding: clamp(54px, 7vw, 88px) 0 clamp(64px, 8vw, 100px);
+  background: radial-gradient(ellipse at 82% 48%, rgba(86,139,112,.11), transparent 38%), var(--wb-paper);
+}
+.wellbeing-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .94fr); align-items: center; gap: clamp(36px, 6vw, 76px); }
+.wellbeing-hero-copy { max-width: 570px; animation: wb-rise .65s cubic-bezier(.2,.75,.25,1) both; }
+.wellbeing-eyebrow { display: block; margin: 0 0 17px; color: var(--wb-green); font-size: 10px; font-weight: 750; letter-spacing: 1.8px; line-height: 1.4; }
+.wellbeing-hero-copy h1 { max-width: 570px; margin: 0; color: var(--wb-ink); font-size: clamp(43px, 5.2vw, 66px); font-weight: 680; letter-spacing: -3.2px; line-height: 1.045; }
+.wellbeing-hero-copy h1 em { color: var(--wb-green); font-style: normal; }
+.wellbeing-intro { max-width: 485px; margin: 24px 0 0; color: var(--wb-muted); font-size: 15px; line-height: 1.85; }
+.wellbeing-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 31px; }
+.wellbeing-primary-button { display: inline-flex; min-height: 49px; align-items: center; justify-content: center; gap: 19px; padding: 0 19px; border: 1px solid var(--wb-ink); border-radius: 8px; background: var(--wb-ink); color: #fff; font-size: 12px; font-weight: 650; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.wellbeing-primary-button:hover { transform: translateY(-2px); background: #294a40; }
+.wellbeing-primary-button:focus-visible, .wellbeing-secondary-link:focus-visible, .pathway-link:focus-visible, .recovery-link:focus-visible { outline: 3px solid rgba(86,139,112,.45); outline-offset: 4px; }
+.wellbeing-secondary-link { display: inline-flex; align-items: center; gap: 9px; color: #52665d; font-size: 12px; font-weight: 650; text-decoration: none; }
+.wellbeing-secondary-link:hover { color: var(--wb-green-dark); }
+.wellbeing-hero-note { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: #7d8b84; font-size: 11px; }
+.wellbeing-note-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: var(--wb-green); }
+.wellbeing-hero-image { position: relative; min-height: 440px; overflow: hidden; border-radius: 18px; background: #e3ece4; box-shadow: 0 18px 48px rgba(25,54,48,.10); animation: wb-image-in .8s .08s ease both; }
+.wellbeing-hero-photo { object-fit: cover; object-position: 68% center; transition: transform .8s cubic-bezier(.2,.75,.25,1); }
+@media (hover:hover) and (pointer:fine) { .wellbeing-hero-image:hover .wellbeing-hero-photo { transform: scale(1.025); } }
+.hero-image-caption { position: absolute; right: 18px; bottom: 18px; display: flex; align-items: center; gap: 11px; padding: 11px 15px; border: 1px solid rgba(255,255,255,.55); border-radius: 10px; background: rgba(255,255,255,.9); box-shadow: 0 5px 18px rgba(25,54,48,.08); backdrop-filter: blur(10px); }
+.hero-caption-symbol { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 9px; background: var(--wb-soft); color: var(--wb-green); font-size: 19px; }
+.hero-image-caption strong, .hero-image-caption small { display: block; }
+.hero-image-caption strong { margin-bottom: 3px; color: var(--wb-ink); font-size: 11px; }
+.hero-image-caption small { color: var(--wb-muted); font-size: 10px; }
+
+/* Shared section heading */
+.wellbeing-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 34px; margin-bottom: 30px; }
+.wellbeing-section-heading .wellbeing-eyebrow { margin-bottom: 12px; }
+.wellbeing-section-heading h2 { max-width: 620px; margin: 0; color: var(--wb-ink); font-size: clamp(28px, 3.2vw, 39px); font-weight: 650; letter-spacing: -1.5px; line-height: 1.14; }
+.wellbeing-section-heading > p { max-width: 330px; margin: 0 0 2px; color: var(--wb-muted); font-size: 12px; line-height: 1.8; }
+
+/* Pathways */
+.wellbeing-pathways { padding: clamp(64px, 7vw, 88px) 0; background: #fff; }
+.wellbeing-pathway-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 13px; }
+.wellbeing-pathway-card { display: flex; min-height: 244px; flex-direction: column; padding: 21px 20px 19px; border: 1px solid var(--wb-line); border-radius: 12px; background: #fff; transition: border-color .22s ease, transform .22s ease, box-shadow .22s ease; }
+.wellbeing-pathway-card:hover { transform: translateY(-3px); border-color: #cbdacf; box-shadow: 0 10px 26px rgba(25,54,48,.055); }
+.pathway-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; }
+.pathway-icon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 10px; background: var(--wb-soft); color: var(--wb-green-dark); font-size: 20px; }
+.pathway-number { color: #a0ada5; font-size: 10px; font-weight: 700; letter-spacing: .7px; }
+.wellbeing-pathway-card h3 { margin: 0 0 9px; color: var(--wb-ink); font-size: 15px; font-weight: 650; letter-spacing: -.25px; line-height: 1.35; }
+.wellbeing-pathway-card > p { margin: 0 0 17px; color: var(--wb-muted); font-size: 11px; line-height: 1.75; }
+.pathway-link { display: inline-flex; align-items: center; gap: 9px; margin-top: auto; color: var(--wb-green-dark); font-size: 11px; font-weight: 700; text-decoration: none; }
+.pathway-link:hover { gap: 13px; }
+.wb-arrow { display: inline-block; font-size: 13px; transition: transform .2s ease; }
+.pathway-link:hover .wb-arrow { transform: translate(2px,-2px); }
+
+/* Learning topics */
+.wellbeing-topics { padding: clamp(64px, 7vw, 88px) 0; background: var(--wb-paper); }
+.topics-heading { margin-bottom: 28px; }
+.wellbeing-topic-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 13px; }
+.wellbeing-topic-card { min-height: 190px; padding: 22px 22px 19px; border: 1px solid var(--wb-line); border-radius: 12px; background: #fff; transition: border-color .2s ease, transform .2s ease; }
+.wellbeing-topic-card:hover { transform: translateY(-2px); border-color: #cbdacf; }
+.topic-category { display: inline-block; margin-bottom: 16px; color: var(--wb-green-dark); font-size: 9px; font-weight: 750; letter-spacing: 1.15px; }
+.wellbeing-topic-card h3 { max-width: 290px; margin: 0 0 8px; color: var(--wb-ink); font-size: 16px; font-weight: 650; letter-spacing: -.35px; line-height: 1.35; }
+.wellbeing-topic-card > p { margin: 0; color: var(--wb-muted); font-size: 11px; line-height: 1.75; }
+.topic-status { display: inline-block; margin-top: 15px; color: #89968f; font-size: 10px; }
+.topics-footnote { margin: 19px 0 0; color: #7d8b84; font-size: 11px; line-height: 1.7; }
+
+/* Recovery */
+.wellbeing-recovery { padding: clamp(54px, 6vw, 76px) 0; background: #eaf1eb; }
+.recovery-inner { display: grid; grid-template-columns: 84px minmax(0,1fr); align-items: center; gap: 31px; max-width: 930px; }
+.recovery-symbol { display: grid; width: 78px; height: 78px; place-items: center; border: 1px solid rgba(86,139,112,.28); border-radius: 50%; color: var(--wb-green); font-size: 37px; }
+.recovery-copy .wellbeing-eyebrow { margin-bottom: 12px; }
+.recovery-copy h2 { max-width: 650px; margin: 0 0 12px; color: var(--wb-ink); font-size: clamp(27px,3.3vw,38px); font-weight: 650; letter-spacing: -1.35px; line-height: 1.15; }
+.recovery-copy > p { max-width: 610px; margin: 0; color: var(--wb-muted); font-size: 12px; line-height: 1.85; }
+.recovery-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 17px; color: var(--wb-green-dark); font-size: 11px; font-weight: 700; text-decoration: none; }
+.recovery-link:hover { gap: 14px; }
+
+/* Human support */
+.wellbeing-support { padding: clamp(64px,7vw,88px) 0; background: #fff; }
+.support-inner { display: grid; grid-template-columns: minmax(0,1fr) minmax(300px,.78fr); align-items: center; gap: clamp(36px,6vw,75px); }
+.support-copy h2 { max-width: 560px; margin: 0 0 15px; color: var(--wb-ink); font-size: clamp(29px,3.5vw,42px); font-weight: 650; letter-spacing: -1.5px; line-height: 1.14; }
+.support-copy > p { max-width: 530px; margin: 0; color: var(--wb-muted); font-size: 12px; line-height: 1.9; }
+.support-notice { padding: 25px; border: 1px solid var(--wb-line); border-radius: 13px; background: var(--wb-paper); }
+.support-notice-icon { display: grid; width: 38px; height: 38px; place-items: center; margin-bottom: 17px; border-radius: 10px; background: var(--wb-soft); color: var(--wb-green); font-size: 20px; }
+.support-notice h3 { margin: 0 0 9px; color: var(--wb-ink); font-size: 17px; font-weight: 650; }
+.support-notice > p { margin: 0; color: var(--wb-muted); font-size: 11px; line-height: 1.8; }
+.support-status { display: inline-block; margin-top: 17px; padding-top: 11px; border-top: 1px solid #dfe7df; color: var(--wb-green-dark); font-size: 9px; font-weight: 750; letter-spacing: 1px; }
+
+/* Urgent help */
+.wellbeing-emergency { padding: 19px 0; background: #193630; color: #fff; }
+.emergency-inner { display: flex; align-items: flex-start; gap: 12px; }
+.emergency-mark { display: grid; width: 21px; height: 21px; flex: 0 0 21px; place-items: center; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; color: #fff; font-size: 11px; font-weight: 750; }
+.emergency-inner p { margin: 0; color: rgba(255,255,255,.78); font-size: 10px; line-height: 1.8; }
+.emergency-inner strong { color: #fff; }
+
+@keyframes wb-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes wb-image-in { from { opacity: 0; transform: translateY(12px) scale(.99); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .wellbeing-pathway-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .wellbeing-pathway-card { min-height: 218px; }
+  .wellbeing-topic-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+  .wellbeing-container { width: min(100% - 40px, 600px); }
+  .wellbeing-hero { padding: 48px 0 60px; }
+  .wellbeing-hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .wellbeing-hero-copy h1 { max-width: 560px; font-size: clamp(42px,9vw,58px); letter-spacing: -2.5px; }
+  .wellbeing-intro { margin-top: 18px; font-size: 14px; }
+  .wellbeing-hero-image { min-height: 360px; border-radius: 14px; }
+  .wellbeing-hero-photo { object-position: 67% center; }
+  .wellbeing-section-heading { display: block; }
+  .wellbeing-section-heading > p { margin-top: 13px; }
+  .support-inner { grid-template-columns: 1fr; gap: 27px; }
+  .recovery-inner { grid-template-columns: 1fr; gap: 19px; }
+  .recovery-symbol { width: 61px; height: 61px; font-size: 30px; }
+}
+@media (max-width: 480px) {
+  .wellbeing-container { width: calc(100% - 34px); }
+  .wellbeing-hero { padding-top: 40px; }
+  .wellbeing-hero-copy h1 { font-size: clamp(39px,10vw,49px); letter-spacing: -2px; }
+  .wellbeing-hero-actions { align-items: flex-start; flex-direction: column; gap: 17px; }
+  .wellbeing-hero-image { min-height: 300px; }
+  .wellbeing-pathway-grid, .wellbeing-topic-grid { grid-template-columns: 1fr; }
+  .wellbeing-pathway-card { min-height: 0; padding: 19px; }
+  .pathway-card-top { margin-bottom: 18px; }
+  .wellbeing-topic-card { min-height: 0; padding: 20px; }
+  .wellbeing-pathways, .wellbeing-topics, .wellbeing-support { padding: 56px 0; }
+  .wellbeing-section-heading h2 { font-size: 29px; }
+  .hero-image-caption { right: 12px; bottom: 12px; }
+  .support-notice { padding: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wellbeing-hero-copy, .wellbeing-hero-image { animation: none; }
+  .wellbeing-hero-photo, .wellbeing-pathway-card, .wellbeing-topic-card, .wellbeing-primary-button, .pathway-link, .recovery-link { transition: none; }
+}

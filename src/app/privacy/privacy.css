@@ -1,0 +1,140 @@
+.privacy-page {
+  min-height: 100vh;
+  padding: 60px 24px 100px;
+  background: #f7f8f5;
+}
+
+.privacy-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.privacy-header {
+  margin-bottom: 40px;
+}
+
+.privacy-eyebrow {
+  margin: 0 0 12px;
+  color: #57977c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.privacy-header h1 {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 4vw, 42px);
+  letter-spacing: -1.6px;
+  color: #172d35;
+  line-height: 1.15;
+}
+
+.privacy-intro {
+  margin: 0;
+  color: #52635c;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.privacy-section {
+  margin-bottom: 34px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #e6ebe5;
+}
+
+.privacy-section h2 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  color: #172d35;
+}
+
+.privacy-section p {
+  margin: 0 0 12px;
+  color: #52635c;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.privacy-section p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-section ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+  color: #52635c;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.privacy-section li {
+  margin-bottom: 10px;
+}
+
+.privacy-section li:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-section strong {
+  color: #172d35;
+  font-weight: 650;
+}
+
+.privacy-final {
+  border-bottom: 0;
+  padding: 26px 24px;
+  background: #fdf3f1;
+  border-radius: 14px;
+}
+
+.privacy-final h2 {
+  color: #7a1e15;
+}
+
+.privacy-final p,
+.privacy-final ul {
+  color: #7a1e15;
+}
+
+.privacy-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 34px 0 26px;
+}
+
+.privacy-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background: #172d35;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.privacy-btn:hover {
+  background: #25434b;
+  transform: translateY(-1px);
+}
+
+.privacy-btn-secondary {
+  background: #ffffff;
+  color: #52635c;
+  border: 1px solid #e2e9e3;
+}
+
+.privacy-btn-secondary:hover {
+  background: #f7f8f5;
+}
+
+.privacy-footer {
+  margin: 0;
+  color: #a2ada6;
+  font-size: 11.5px;
+  line-height: 1.8;
+}

@@ -1,0 +1,284 @@
+.result-page {
+  min-height: 100vh;
+  padding: 60px 24px 100px;
+  background: #f7f8f5;
+}
+
+.result-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.result-back {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 30px;
+  color: #71827d;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-back:hover {
+  color: #326d53;
+}
+
+/* Crisis block — shown first, prominent */
+
+.result-crisis {
+  display: flex;
+  gap: 20px;
+  padding: 26px 24px;
+  margin-bottom: 30px;
+  background: #fdf3f1;
+  border: 2px solid #d4a5a0;
+  border-radius: 16px;
+}
+
+.result-crisis-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #f5c9c2;
+  color: #8a2a20;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.result-crisis h2 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+  color: #7a1e15;
+}
+
+.result-crisis > div > p {
+  margin: 0 0 14px;
+  color: #6b322a;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.result-crisis ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  color: #6b322a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.result-crisis li {
+  margin-bottom: 8px;
+}
+
+.result-crisis-note {
+  padding-top: 14px;
+  border-top: 1px solid #f0d5d0;
+  color: #8a2a20 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+/* Header */
+
+.result-header {
+  margin-bottom: 34px;
+}
+
+.result-eyebrow {
+  margin: 0 0 12px;
+  color: #57977c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.result-header h1 {
+  margin: 0 0 20px;
+  font-size: clamp(26px, 3.4vw, 34px);
+  letter-spacing: -1px;
+  color: #172d35;
+  line-height: 1.25;
+}
+
+.result-score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.result-score-number {
+  font-size: 56px;
+  font-weight: 750;
+  letter-spacing: -3px;
+  color: #172d35;
+  line-height: 1;
+}
+
+.result-score-max {
+  font-size: 20px;
+  color: #a2ada6;
+  font-weight: 500;
+}
+
+.result-summary {
+  margin: 0;
+  max-width: 620px;
+  color: #52635c;
+  font-size: 14.5px;
+  line-height: 1.85;
+}
+
+/* Guest */
+
+.result-guest {
+  padding: 18px 22px;
+  margin-bottom: 30px;
+  background: #e3f1e9;
+  border-radius: 13px;
+}
+
+.result-guest p {
+  margin: 0 0 12px;
+  color: #2f5a47;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.result-guest-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #326d53;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.result-guest-btn:hover {
+  background: #244a38;
+}
+
+/* Next steps */
+
+.result-next {
+  margin-bottom: 34px;
+}
+
+.result-next h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  color: #172d35;
+}
+
+.result-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-step {
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e6ebe5;
+  border-radius: 13px;
+}
+
+.result-step h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: #172d35;
+}
+
+.result-step p {
+  margin: 0;
+  color: #52635c;
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.result-step-urgent {
+  background: #fdf3f1;
+  border-color: #ecc9c4;
+}
+
+.result-step-urgent h3 {
+  color: #7a1e15;
+}
+
+.result-step-support h3 {
+  color: #326d53;
+}
+
+.result-step-clinical h3 {
+  color: #2d4d7a;
+}
+
+.result-step-info {
+  opacity: 0.9;
+}
+
+/* Actions */
+
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.result-action-primary,
+.result-action-secondary {
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.result-action-primary {
+  background: #172d35;
+  color: #ffffff;
+}
+
+.result-action-primary:hover {
+  background: #25434b;
+  transform: translateY(-1px);
+}
+
+.result-action-secondary {
+  border: 1px solid #e2e9e3;
+  color: #52635c;
+  background: #ffffff;
+}
+
+.result-action-secondary:hover {
+  background: #f7f8f5;
+}
+
+.result-disclaimer {
+  margin: 0;
+  padding-top: 22px;
+  border-top: 1px solid #e6ebe5;
+  color: #a2ada6;
+  font-size: 11.5px;
+  line-height: 1.85;
+}
+
+@media (max-width: 620px) {
+  .result-crisis {
+    flex-direction: column;
+    padding: 20px 18px;
+  }
+  .result-score-number {
+    font-size: 44px;
+  }
+}

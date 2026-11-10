@@ -1,0 +1,45 @@
+{
+  "name": "PAFUPI — Mental Wellbeing",
+  "short_name": "PAFUPI",
+  "description": "A space for mental wellbeing, understanding, and support. Support is closer than you think.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f8f5",
+  "theme_color": "#172d35",
+  "categories": ["health", "lifestyle", "education"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Check in",
+      "url": "/mental-wellbeing/check-in",
+      "description": "Notice how you're feeling right now"
+    },
+    {
+      "name": "Screening",
+      "url": "/mental-wellbeing/screening",
+      "description": "Private PHQ-9 screening"
+    }
+  ]
+}

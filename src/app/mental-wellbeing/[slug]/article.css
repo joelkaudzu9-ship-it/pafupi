@@ -1,0 +1,56 @@
+.article-page {
+  min-height: 70vh;
+  padding: 3.5rem 1.25rem 5rem;
+  background: #f7f8f5;
+  color: #203631;
+}
+.article-shell { width: min(100%, 820px); margin: 0 auto; }
+.article-back-link, .article-footer-link a {
+  color: #39745e; text-decoration: none; font-weight: 650;
+}
+.article-back-link { display: inline-block; margin-bottom: 2.5rem; }
+.article-back-link:hover, .article-footer-link a:hover { text-decoration: underline; }
+.article-header { padding-bottom: 2rem; border-bottom: 1px solid #dce5df; }
+.article-category {
+  display: inline-block; margin-bottom: 1rem; color: #54836d;
+  font-size: .72rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase;
+}
+.article-header h1 {
+  max-width: 760px; margin: 0; color: #173b34;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.35rem, 6vw, 4.25rem); font-weight: 500;
+  line-height: 1.08; letter-spacing: -.045em;
+}
+.article-summary { max-width: 690px; margin: 1.2rem 0 0; color: #62736c; font-size: 1.12rem; line-height: 1.8; }
+.article-body { padding: 2.2rem 0 1rem; }
+.article-body p, .article-body li {
+  color: #52635c; font-size: 1.02rem; line-height: 1.9;
+}
+.article-introduction { color: #30463e !important; font-size: 1.17rem !important; }
+.article-section { margin: 2.6rem 0; }
+.article-section h2 {
+  margin: 0 0 .8rem; color: #1b4037;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 500;
+}
+.article-section p { margin: .7rem 0; }
+.article-section ul { padding-left: 1.35rem; }
+.article-section li { padding: .25rem 0; }
+.article-closing-note {
+  margin: 2.5rem 0; padding: 1.3rem 1.5rem;
+  border-left: 3px solid #6a9a7c; border-radius: 0 12px 12px 0;
+  background: #eaf1eb; color: #385449; line-height: 1.8;
+}
+.article-disclaimer {
+  margin-top: 2.5rem; padding: 1.4rem 1.5rem;
+  border: 1px solid #e0e5df; border-radius: 14px; background: #fff;
+}
+.article-disclaimer strong { color: #28483d; }
+.article-disclaimer p { margin: .45rem 0 0; color: #69766f; font-size: .9rem; line-height: 1.7; }
+.article-footer-link { margin-top: 2rem; }
+@media (max-width: 600px) {
+  .article-page { padding: 2rem 1rem 3.5rem; }
+  .article-back-link { margin-bottom: 1.8rem; }
+  .article-summary { font-size: 1rem; }
+  .article-body p, .article-body li { font-size: .98rem; }
+}
